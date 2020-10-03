@@ -35,7 +35,7 @@ class minRmq
 			_log.resize(n+1,0) ;
 
 			for(int i = 2 ; i <= n ; i ++ ) _log[i] = _log[i>>1]+1 ;
-			dp.resize(_log[n]+1, vector<int>(n,0) ) ;
+			dp.resize(_log[n]+1, vector<T>(n,0) ) ;
 
 			for(int i = 0 ; i < n ; i++) dp[0][i] = a[i] ;
 			for(int i = 1 ; i <= _log[n] ; i++)
