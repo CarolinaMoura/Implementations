@@ -24,10 +24,5 @@ struct Point
 	ll operator % (Point other) const { return x*other.y - y*other.x ; }
 	ll operator *(Point other) const { return x*other.x + y*other.y ; }
 	void print() { printf("%lld %lld\n" , x , y) ; }
-
+	void read() { scanf("%lld %lld", &x, &y) ; }
 } ;
-
-
-int main()
-{
-}
